@@ -19,7 +19,14 @@ const About: React.FunctionComponent<IAboutProps> = (props: IAboutProps) => {
 
     return (
         <>
-            <Typography variant="h3" className={classes.title}>About</Typography>
+            <Typography variant="h3" className={classes.title}>Mobility Solutions IT</Typography>
+            <br/>
+            <Typography variant="body1">Mobility Solutions, das Daimler Buses Innovation Lab, steckt stehts voller Energie und Ideen. Hier werden neue und innovative Features 
+            rund um Connectivity und Digitalisierung entwickelt. 
+            </Typography>
+            <Typography variant="body1">
+                Vielleicht könnte hier ja noch mehr tolles stehen, inklusive nem Logo oder so :-)
+            </Typography>
         </>
     );
 }

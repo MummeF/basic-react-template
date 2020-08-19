@@ -19,7 +19,7 @@ const Page404: React.FunctionComponent<IPage404Props> = (props: IPage404Props) =
 
     return (
         <>
-            <Typography variant="h3" className={classes.title}>Page not found</Typography>
+            <Typography variant="h1" className={classes.title}>Page not found : - (</Typography>
         </>
     );
 }

@@ -1,6 +1,6 @@
 import { makeStyles, setRef } from "@material-ui/core";
 import React from "react";
-import BasicRouter, { BrowserRouter } from "react-basic-routing";
+import BasicRouter from "react-basic-routing";
 import Footer from "./components/common/Footer";
 import Header from "./components/common/Header";
 import { routes } from "./library/Routes";

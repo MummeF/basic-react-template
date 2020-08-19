@@ -66,3 +66,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+useful snippet: 
+
+
+<code>
+{
+	"Create small Component": {
+		"prefix": "smc",
+		"body": [
+			"const $1 = () => {",
+			"\treturn (<>",
+			"\t\t$2",
+			"\t</>);",
+			"}"
+		],
+		"description": "Create a small component"
+	}
+}
+</code>
