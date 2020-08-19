@@ -52,7 +52,7 @@ const CocktailSearch: React.FunctionComponent<ICocktailSearchProps> = (props: IC
                 .then(res => {
                     const match = res.drinks.map((drink: DrinkJSON) => doMagicAndMakeDrinkBeautiful(drink));
                     setFirstLetterMatch(match);
-                    setDisplayedMatch(match.filter(drink => drink.strDrink.toLowerCase().startsWith(newTerm.toLowerCase())));
+                    setDisplayedMatch(match.filter((drink: Drink) => drink.strDrink.toLowerCase().startsWith(newTerm.toLowerCase())));
                 })
                 .catch(res => {
                     setFirstLetterMatch([]);
