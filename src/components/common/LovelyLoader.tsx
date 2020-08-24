@@ -23,7 +23,7 @@ const LovelyLoader: React.FunctionComponent<ILovelyLoaderProps> = (props: ILovel
     return (
         <>
             <div className={classes.root}>
-                <Loader type="Hearts" color={grey[700]} height={200} width={400} />
+                <Loader type="Hearts" color={grey[700]} height={80} width={160} />
             </div>
 
         </>
