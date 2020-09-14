@@ -6,6 +6,7 @@ import CocktailSearch from "../views/cocktail/CocktailSearch";
 import CocktailRandom from "../views/cocktail/CocktailRandom";
 import { RouteCocktail } from "../views/cocktail/Cocktail";
 import CocktailPage from "../views/CocktailPage";
+import Cocktail from "../views/Cocktail";
 
 export const routes: (BasicRoute | DynamicRoute)[] = [
 
@@ -19,6 +20,13 @@ export const routes: (BasicRoute | DynamicRoute)[] = [
         path: "/about",
         name: "About",
         child: <About />,
+        exact: true
+    },
+    
+    {
+        path: "/supercocktail",
+        name: "Cocktail",
+        child: <Cocktail />,
         exact: true
     },
     {

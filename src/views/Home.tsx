@@ -7,6 +7,17 @@ export interface IHomeProps {
 
 }
 
+interface Person {
+    name: string;
+    alter: number;
+    beruf: string;
+    schuhgröße: number;
+    istVolljährig: boolean;
+    hobbies: string[];
+}
+
+
+
 const styles = makeStyles((theme: Theme) =>
     createStyles({
         title: {
@@ -23,8 +34,26 @@ const styles = makeStyles((theme: Theme) =>
 
 const Home: React.FunctionComponent<IHomeProps> = (props: IHomeProps) => {
     const classes = styles();
-    const [randomFact, setRandomFact] = useState<String>();
-    const [factOfTheDay, setFactOfTheDay] = useState<String>();
+    const [randomFact, setRandomFact] = useState<string>();
+    const [factOfTheDay, setFactOfTheDay] = useState<string>();
+
+    var text: string;
+
+    var felix: Person;
+    felix ={
+        name: 'Felix',
+        alter: 20,
+        beruf: "Nerd",
+        schuhgröße: 44,
+        istVolljährig: true,
+        hobbies: ["programmieren", "nerdytalk" ]
+    }
+
+    console.log(felix.hobbies[0]);
+
+    felix.hobbies.forEach(hobbie=>{
+        console.log(hobbie);
+    })
 
     const [loaded, setLoaded] = useState(false);
     if (!loaded) {
@@ -48,9 +77,9 @@ const Home: React.FunctionComponent<IHomeProps> = (props: IHomeProps) => {
     return (
         <>
             <Typography variant="h3" className={classes.title}>Home</Typography>
-            <br/>
-            <br/>
-            <br/>
+            <br />
+            <br />
+            <br />
             <Paper className={classes.root} elevation={2}>
                 <Grid container>
                     <Grid item xs={4}>

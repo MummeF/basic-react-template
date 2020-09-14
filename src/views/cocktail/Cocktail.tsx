@@ -62,11 +62,11 @@ const Cocktail: React.FunctionComponent<ICocktailProps> = (props: ICocktailProps
                         <Grid item xs={12}><Typography className={classes.title} variant="h3">{props.drink?.strDrink}</Typography></Grid>
                         <Grid item xs={12}><Typography variant="h6"><b>{props.drink?.strCategory} - {props.drink?.strAlcoholic}</b></Typography></Grid>
                         <Grid item xs={12} className={classes.blocker} />
-                        <Grid item xs={2}><Typography variant="h5">Instructions</Typography></Grid>
-                        <Grid item xs={10}><Typography variant="body1">{props.drink?.strInstructions}</Typography></Grid>
+                        <Grid item xs={3}><Typography variant="h5">Instructions</Typography></Grid>
+                        <Grid item xs={8}><Typography variant="body1">{props.drink?.strInstructions}</Typography></Grid>
                         <Grid item xs={12} className={classes.blocker} />
-                        <Grid item xs={2}><Typography variant="h5">Ingredients</Typography></Grid>
-                        <Grid item xs={10}><IngredientList /></Grid>
+                        <Grid item xs={3}><Typography variant="h5">Ingredients</Typography></Grid>
+                        <Grid item xs={8}><IngredientList /></Grid>
                     </Grid>
                 </Grid>
                 <Grid item xs={3}>
